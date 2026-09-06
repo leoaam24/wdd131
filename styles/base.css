@@ -10,8 +10,11 @@ h1 {
     font-weight: 200;
 }
 
+header {
+    max-width: 100%;
+}
 
-header nav {
+nav {
 
     display: flex;
     background-color: #246a73;
