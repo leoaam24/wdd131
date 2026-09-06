@@ -1,0 +1,141 @@
+body {
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+
+nav {
+
+    display: flex;
+    background-color: #246a73;
+    color: #F3DFC1;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    transition: background-color .5s ease;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #F3DFC1;
+    padding: .5em;
+    justify-content: center;
+}
+
+nav a:hover {
+    background-color: #ddbea8;
+    color: #160f29;
+    font-weight: 500;
+}
+
+#course-title {
+    display: block;
+    background-color: #160f29;
+    color: #ffff;
+    text-align: center;
+    font-weight: 500;
+    padding: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#authorName {
+    grid-column: 1/ -1;
+    padding: 0;
+    font-weight: 400;
+    color: #160f29;
+    margin: 0 auto;
+}
+
+.card {
+    max-width: 100%;
+    border: 1px solid #160f29;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.card .cardTitle {
+    display: block;
+    background-color: #368f8b;
+    color: #ffff;
+    padding: .5em;
+    margin: 0;
+    border-bottom: 1px solid #160f29;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card .aboutMeContainer {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    padding: 1em;
+}
+
+.card .aboutMeContainer p {
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .5em;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.aboutMeContainer-2 {
+    padding: 1em;
+    line-height: 1.5;
+}
+
+.resourcesCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.resourcesCard a {
+    transition: background-color .5s ease;
+    display: block;
+    padding: 1em;
+    max-width: 100%;
+    background-color: #368f8b;
+    border: 1px solid #160f29;
+    text-decoration: none;
+    color: #ffff;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.resourcesCard a:hover {
+    background-color: #ddbea8;
+    color: #160f29;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #246a73;
+    max-height: 100%;
+    padding: 1em;
+    color: #F3DFC1;
+}
