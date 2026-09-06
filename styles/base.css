@@ -11,7 +11,7 @@ h1 {
 }
 
 
-nav {
+header nav {
 
     display: flex;
     background-color: #246a73;
@@ -71,7 +71,7 @@ main {
 
 .card .cardTitle {
     display: block;
-    background-color: #368f8b;
+    background-color: #246a73;
     color: #ffff;
     padding: .5em;
     margin: 0;
@@ -119,7 +119,7 @@ main {
     display: block;
     padding: 1em;
     max-width: 100%;
-    background-color: #368f8b;
+    background-color: #246a73;
     border: 1px solid #160f29;
     text-decoration: none;
     color: #ffff;
