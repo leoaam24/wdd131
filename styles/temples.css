@@ -44,7 +44,12 @@ nav .hamburgerBtn.open {
     display: block;
 }
 
-
+#navTitle {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+    font-size: 32px;
+}
 
 main {
     max-width: 800px;
