@@ -1,0 +1,75 @@
+body {
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+
+    display: flex;
+    background-color: #246a73;
+    color: #F3DFC1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nv.mobileview {
+    flex-direction: column;
+}
+
+.nv.mobileview a {
+    text-align: center;
+    text-decoration: none;
+    color: #F3DFC1;
+    padding: 24px;
+    width: 100%;
+}
+
+.nv.mobileview a:hover {
+    background-color: #ddbea8;
+    color: #160f29;
+    font-weight: 500;
+}
+
+.item.close {
+    display: none;
+}
+
+
+nav .hamburgerBtn.open {
+    display: block;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#mainTitle {
+    text-align: center;
+}
+
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+
+.temple-figure img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #246a73;
+    max-height: 100%;
+    padding: 1em;
+    color: #F3DFC1;
+}
