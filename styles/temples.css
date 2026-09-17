@@ -17,11 +17,11 @@ nav {
 }
 
 
-.nv.mobileview {
+nav {
     flex-direction: column;
 }
 
-.nv.mobileview a {
+nav a {
     text-align: center;
     text-decoration: none;
     color: #F3DFC1;
@@ -29,7 +29,7 @@ nav {
     width: 100%;
 }
 
-.nv.mobileview a:hover {
+nav a:hover {
     background-color: #ddbea8;
     color: #160f29;
     font-weight: 500;
@@ -49,6 +49,7 @@ nav .hamburgerBtn.open {
     padding-bottom: 1em;
     font-weight: 700;
     font-size: 32px;
+    width: 100%;
 }
 
 main {
@@ -73,8 +74,10 @@ main {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     background-color: #246a73;
-    max-height: 100%;
     padding: 1em;
     color: #F3DFC1;
+    max-width: 100%;
 }

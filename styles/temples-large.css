@@ -1,4 +1,48 @@
-@media screen and (min-width: 760px) {
+/* desktop View */
+@media screen and (min-width: 768px) {
+
+    #navTitle {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #246a73;
+        color: #F3DFC1;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    nav a {
+        transition: background-color .5s ease;
+        width: 100%;
+        text-decoration: none;
+        color: #F3DFC1;
+        padding: .5em;
+        justify-content: center;
+    }
+
+    nav a:hover {
+        background-color: #ddbea8;
+        color: #160f29;
+        font-weight: 500;
+    }
+
+    nav .hamburgerBtn.close {
+        text-align: right;
+        max-width: 100%;
+    }
+
+
+}
+
+/* Tablet View */
+
+@media screen and (min-width: 1024px) {
 
     #temple-container {
         display: grid;
@@ -11,36 +55,47 @@
         padding: 0;
     }
 
-}
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #246a73;
+        color: #F3DFC1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        transition: background-color .5s ease;
+        width: 100%;
+        text-decoration: none;
+        color: #F3DFC1;
+        padding: .5em;
+        justify-content: center;
+    }
+
+    nav a:hover {
+        background-color: #ddbea8;
+        color: #160f29;
+        font-weight: 500;
+    }
+
+    nav .hamburgerBtn.close {
+        display: none;
+    }
+
+    nav .item.close {
+        display: block;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
 
-.nv.fullview {
-    display: flex;
-    background-color: #246a73;
-    color: #F3DFC1;
-    justify-content: center;
-    align-items: center;
-}
+    footer {
+        margin: 0;
+    }
 
-
-
-
-.nv.fullview a {
-    transition: background-color .5s ease;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    color: #F3DFC1;
-    padding: .5em;
-    justify-content: center;
-}
-
-.nv.fullview a:hover {
-    background-color: #ddbea8;
-    color: #160f29;
-    font-weight: 500;
-}
-
-nav .hamburgerBtn.close {
-    display: none;
 }

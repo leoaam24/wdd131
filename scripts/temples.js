@@ -30,13 +30,3 @@ hamburgerMenu.addEventListener("click", function () {
 
 })
 
-mq.addEventListener("change", (e) => {
-    if (e.matches) {
-        navigationBar.classList.replace("mobileview", "fullview");
-        hamburgerMenu.classList.replace("open", "close");
-    } else {
-        navigationBar.classList.replace("fullview", "mobileview");
-        hamburgerMenu.classList.replace("close", "open");
-    }
-})
-
