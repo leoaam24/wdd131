@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines - Leo Alfred A. Mosquera</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1 id="heroTitle">Republic of the Philippines</h1>
+        <div id="heroImageContainer">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 764px)">
+                <img src="images/hero-small.webp" alt="Philippine Eagle Picture" width="640" height="427">
+            </picture>
+        </div>
+        <div id="dataContainer">
+            <h2 id="dataTitle">Data</h2>
+            <ol>
+                <li class="dataItem">Area: <span class="dataValue">300,000 sq km</span></li>
+                <li class="dataItem">Population: <span class="dataValue">114,163,719</span></li>
+                <li class="dataItem">Capital: <span class="dataValue">Manila</span></li>
+                <li class="dataItem">Languages: <span class="dataValue">Filipino, English</span></li>
+                <li class="dataItem">Currency: <span class="dataValue">Philippine Peso (₱)</span></li>
+                <li class="dataItem">Time Zone: <span class="dataValue">UTC+8</span></li>
+                <li class="dataItem">Calling Code: <span class="dataValue">+63</span></li>
+                <li class="dataItem">Internet TLD: <span class="dataValue">.ph</span></li>
+            </ol>
+        </div>
+        <div id="weatherContainer">
+            <h2 id="weatherTitle">Weather</h2>
+            <img id="weatherIcon" src="images/weather icon.svg" alt="weather icon">
+            <ol>
+                <li class="weather temp">Temperature: <span class="value temp">10</span> ºC</li>
+                <li class="weather cond">Conditions: <span class="value cond">Mostly Cloudy</span></li>
+                <li class="weather wind">Wind: <span class="value wind">7</span> km/h</li>
+                <li class="weather winc">Wind Chill: <span class="value winc"></span>ºC</li>
+            </ol>
+
+            <span class="testTemp"></span>
+            <span class="testWindSpeed"></span>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Leo Alfred A. Mosquera, Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
