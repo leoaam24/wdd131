@@ -3,6 +3,7 @@
     --secondaryColor: blue;
     --thirdColor: #FFFFCC;
     --bord: 1px solid black;
+    --bordRad: 15px;
 }
 
 body {
@@ -23,6 +24,9 @@ h2 {
     font-size: 2em;
 }
 
+header {
+    background-color: var(--secondaryColor);
+}
 
 main {
     max-width: 800px;
@@ -35,7 +39,7 @@ main {
     max-width: 100%;
     padding: 1em;
     background-color: var(--mainColor);
-    margin-top: 0;
+    margin: 0;
 }
 
 #heroImageContainer {
