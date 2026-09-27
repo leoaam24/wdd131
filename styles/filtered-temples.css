@@ -14,8 +14,8 @@ body {
 }
 
 nav {
-
     display: flex;
+    flex-direction: column;
     background-color: #246a73;
     color: #F3DFC1;
     justify-content: center;
@@ -23,10 +23,6 @@ nav {
     text-align: center;
 }
 
-
-nav {
-    flex-direction: column;
-}
 
 nav a {
     text-align: center;
