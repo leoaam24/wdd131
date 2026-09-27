@@ -1,0 +1,119 @@
+:root {
+    --bord: 1px solid #c4c1c1;
+    --bordRad: 15px;
+    --boxShad: 0 0 15px -8px black;
+}
+
+body {
+    max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav {
+
+    display: flex;
+    background-color: #246a73;
+    color: #F3DFC1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+nav {
+    flex-direction: column;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #F3DFC1;
+    padding: 24px;
+    width: 100%;
+}
+
+nav a:hover {
+    background-color: #ddbea8;
+    color: #160f29;
+    font-weight: 500;
+}
+
+.item.close {
+    display: none;
+}
+
+
+nav .hamburgerBtn.open {
+    display: block;
+}
+
+#navTitle {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+}
+
+main {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#mainTitle {
+    text-align: center;
+}
+
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.temple-card {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #eeeeee;
+    border: var(--bord);
+    border-radius: var(--bordRad);
+    align-items: center;
+    max-width: 100%;
+}
+
+.temple-name {
+    text-align: center;
+}
+
+.temple-location,
+.temple-dedicated,
+.temple-size {
+    text-align: center;
+    font-weight: 300;
+}
+
+.temple-card img {
+    object-fit: cover;
+    max-width: 100%;
+    box-shadow: var(--boxShad);
+    border-radius: var(--bordRad);
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    background-color: #246a73;
+    padding: 1em;
+    color: #F3DFC1;
+    max-width: 100%;
+    margin: 0 auto;
+}
