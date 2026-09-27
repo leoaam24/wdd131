@@ -69,21 +69,21 @@ const temples = [
         "location": "Davao City, Davao del Sur, Philippines",
         "dedicated": "2026, May, 3",
         "area": 18450,
-        "imageUrl": "/images/davao-temple.webp"
+        "imageUrl": "./images/davao-temple.webp"
     },
     {
         "templeName": "Manila Philippines",
         "location": "Quezon City, Metro Manila, Philippines",
         "dedicated": "1984, September, 25",
         "area": 26683,
-        "imageUrl": "/images/manila-temple.webp"
+        "imageUrl": "./images/manila-temple.webp"
     },
     {
         "templeName": "Cebu City Philippines",
         "location": "Cebu City, Cebu, Philippines",
         "dedicated": "2010, June, 13",
         "area": 29556,
-        "imageUrl": "/images/cebu-temple.webp"
+        "imageUrl": "./images/cebu-temple.webp"
     },
 
 ];
