@@ -69,21 +69,21 @@ const temples = [
         "location": "Davao City, Davao del Sur, Philippines",
         "dedicated": "2026, May, 3",
         "area": 18450,
-        "imageUrl": "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-69513-main.jpg"
+        "imageUrl": "../images/davao-temple.webp"
     },
     {
         "templeName": "Manila Philippines",
         "location": "Quezon City, Metro Manila, Philippines",
         "dedicated": "1984, September, 25",
         "area": 26683,
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQATgt0IArjLAvA_e-JneODThEEQ5TDj7BnNMnPZrqZFs7JtRbxr_kriU&s=10"
+        "imageUrl": "../images/manila-temple.webp"
     },
     {
         "templeName": "Cebu City Philippines",
         "location": "Cebu City, Cebu, Philippines",
         "dedicated": "2010, June, 13",
         "area": 29556,
-        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_VgRBJ49KWR58BCsnNuZ5fiw6JxfKwSCPsmG2hfsEOUK281T2mJW3PTD&s=10"
+        "imageUrl": "../images/cebu-temple.webp"
     },
 
 ];
@@ -130,7 +130,7 @@ function createTempleCard(name, location, date, size, imgUrl) {
     cardDedication.classList.add("temple-dedicated");
     cardArea.classList.add("temple-size");
     cardImg.setAttribute("alt", `${name} temple image`);
-    cardImg.setAttribute("loading", "lazy");
+
 
     //adding values
     cardTitle.textContent = name;
@@ -138,6 +138,10 @@ function createTempleCard(name, location, date, size, imgUrl) {
     cardDedication.textContent = date;
     cardArea.textContent = size;
     cardImg.setAttribute("src", imgUrl);
+    cardImg.setAttribute("loading", "lazy");
+    cardImg.setAttribute("width", "277");
+    cardImg.setAttribute("height", "174");
+
 
     //appending to card
     card.appendChild(cardTitle);
