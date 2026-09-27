@@ -69,21 +69,21 @@ const temples = [
         "location": "Davao City, Davao del Sur, Philippines",
         "dedicated": "2026, May, 3",
         "area": 18450,
-        "imageUrl": "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-69497.jpg"
+        "imageUrl": "https://churchofjesuschristtemples.org/assets/img/temples/davao-philippines-temple/davao-philippines-temple-69513-main.jpg"
     },
     {
         "templeName": "Manila Philippines",
         "location": "Quezon City, Metro Manila, Philippines",
         "dedicated": "1984, September, 25",
         "area": 26683,
-        "imageUrl": "https://churchofjesuschristtemples.org/assets/img/temples/manila-philippines-temple/manila-philippines-temple-44346.jpg"
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQATgt0IArjLAvA_e-JneODThEEQ5TDj7BnNMnPZrqZFs7JtRbxr_kriU&s=10"
     },
     {
         "templeName": "Cebu City Philippines",
         "location": "Cebu City, Cebu, Philippines",
         "dedicated": "2010, June, 13",
         "area": 29556,
-        "imageUrl": "https://churchofjesuschristtemples.org/assets/img/temples/cebu-city-philippines-temple/cebu-city-philippines-temple-33251.jpg"
+        "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_VgRBJ49KWR58BCsnNuZ5fiw6JxfKwSCPsmG2hfsEOUK281T2mJW3PTD&s=10"
     },
 
 ];
