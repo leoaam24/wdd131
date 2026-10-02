@@ -171,7 +171,9 @@ nav a:hover {
     text-align: left;
 }
 
-.wireframe {
+
+
+.wireframe, #logo {
     display: block;
     margin: 0 auto;
     max-width: 800px;
