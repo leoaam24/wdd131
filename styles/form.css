@@ -1,0 +1,158 @@
+:root {
+    --primary: #246a73;
+    --secondary: #732442;
+    --colored-background-text: #F3DFC1;
+    --border: 1px solid black;
+
+    --heading-font: "Roboto", sans-serif;
+
+    --bordRad: 20px;
+}
+
+
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+}
+
+p {
+    padding: 0;
+    line-height: .5;
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+#heroTitle {
+    padding: .5em;
+    margin: 0;
+    color: var(--colored-background-text);
+}
+
+
+main {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+#prf {
+    display: block;
+    text-align: left;
+    background-color: var(--primary);
+    color: var(--colored-background-text);
+    padding: 2em;
+    margin: 20px auto;
+    border-radius: var(--bordRad);
+}
+
+#starRating {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+#starRating label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#starRating input {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+label[for=dateInstallation],
+label[for=review] {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+label[for=features] {
+    margin-bottom: 10px;
+}
+
+textarea[name=review] {
+    display: block;
+    height: 44px;
+}
+
+
+
+#userName,
+input[type=date],
+select {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: .75em;
+    max-width: 400px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-bottom: .75em;
+    transform: scale(1.5);
+}
+
+input:required,
+select:required {
+    border-left: 4px solid red;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 5px;
+}
+
+input:required:valid,
+select:required:valid {
+    border-left: 4px solid green;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 5px;
+}
+
+
+#submitBtn {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: .75em;
+    background-color: var(--secondary);
+    color: var(--colored-background-text);
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: var(--primary);
+    padding: 1em;
+    color: var(--colored-background-text);
+    max-width: 100%;
+    text-align: center;
+}

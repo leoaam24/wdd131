@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description"
+        content="This is a form for a product review. This is part of an assignment for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Leo Alfred A. Mosquera">
+
+    <link rel="stylesheet" href="./styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=TASA+Orbiter:wght@400..800&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="heroTitle">Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" id="prf">
+            <label for="product"> Product Name
+                <select name="products" id="products" required>
+                    <option value="" selected disabled>Select a Product</option>
+                </select>
+            </label>
+
+            <fieldset id="starRating">
+                <legend>Overall Rating</legend>
+                <label>&star;<input type="radio" name="rating" id="1star" value="1" required>
+                </label>
+                <label>&star; &star;<input type="radio" name="rating" value="2star" required>
+                </label>
+                <label>&star; &star; &star;<input type="radio" name="rating" value="3star" required>
+                </label>
+                <label>
+                    &star; &star; &star; &star;<input type="radio" name="rating" value="4star" required>
+                </label>
+                <label>
+                    &star; &star; &star; &star; &star;<input type="radio" name="rating" value="5star" required>
+                </label>
+            </fieldset>
+
+            <label for="dateInstallation">Date of Installation
+                <input type="date" name="dateInstallation" id="installDate" required>
+            </label>
+
+
+            <p>Which features did you find useful in the product?</p>
+            <p>(Check all that apply)</p>
+            <label for="features">
+                <input type="checkbox" name="features" id="durability" value="durability"> Durability
+            </label>
+            <label for="features">
+                <input type="checkbox" name="features" id="easeOfUse" value="easeOfUse"> Ease of Use
+            </label>
+            <label for="features">
+                <input type="checkbox" name="features" id="performance" value="performance"> Performance
+            </label for="features">
+            <label for="features">
+                <input type="checkbox" name="features" id="design" value="design"> Design
+            </label>
+            <label for="features">
+                <input type="checkbox" name="features" id="affordable" value="affordable"> Affordable
+            </label>
+
+            <label for="review">
+                Written Review <span class="optional">(Optional)</span>
+                <textarea id="writtenReview" name="review"></textarea>
+            </label>
+
+            <label>
+                Your Name <span class="optional">(Optional)</span>
+                <input type="text" id="userName" name="uname">
+            </label>
+
+            <label>
+                <input type="submit" id="submitBtn" name="submitBtn" value="Send My Review">
+            </label>
+
+
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Leo Alfred A. Mosquera, Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
