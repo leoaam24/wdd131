@@ -56,16 +56,16 @@ main {
     text-align: left;
     background-color: var(--primary);
     color: var(--colored-background-text);
-    padding: 2em;
+    padding: 5em;
     margin: 20px auto;
     border-radius: var(--bordRad);
+    max-width: 400px;
 }
 
 #starRating {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10px;
-    max-width: 400px;
+    margin-bottom: 20px;
 }
 
 #starRating label {
@@ -83,19 +83,22 @@ label {
     display: block;
 }
 
-label[for=dateInstallation],
+label[for=installDate],
 label[for=review] {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-label[for=features] {
-    margin-bottom: 10px;
+label[for=affordable] {
+    margin-bottom: 20px;
 }
 
 textarea[name=review] {
     display: block;
     height: 44px;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
 }
 
 
@@ -105,16 +108,22 @@ input[type=date],
 select {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 40px;
     padding: .75em;
-    max-width: 400px;
+    max-width: inherit;
+    appearance: none;
 }
 
 input[type=radio],
 input[type=checkbox] {
-    margin-bottom: .75em;
+    margin-bottom: 36px;
     transform: scale(1.5);
+    margin-right: 10px;
 }
+
+
+
 
 input:required,
 select:required {
@@ -155,4 +164,18 @@ footer {
     color: var(--colored-background-text);
     max-width: 100%;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 100%;
+    }
+
+    #prf {
+        max-width: 40%;
+    }
+
+    textarea[name=review] {
+        margin-bottom: 40px;
+    }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review Form</title>
     <meta name="description"
         content="This is a form for a product review. This is part of an assignment for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Leo Alfred A. Mosquera">
@@ -26,9 +26,9 @@
     </header>
     <main>
         <form method="get" action="review.html" id="prf">
-            <label for="product"> Product Name
+            <label for="products"> Product Name
                 <select name="products" id="products" required>
-                    <option value="" selected disabled>Select a Product</option>
+                    <option value="" selected disabled>Select a Product &triangledown;</option>
                 </select>
             </label>
 
@@ -36,42 +36,43 @@
                 <legend>Overall Rating</legend>
                 <label>&star;<input type="radio" name="rating" id="1star" value="1" required>
                 </label>
-                <label>&star; &star;<input type="radio" name="rating" value="2star" required>
+                <label>&star; &star;<input type="radio" name="rating" id="2star" value="2star" required>
                 </label>
-                <label>&star; &star; &star;<input type="radio" name="rating" value="3star" required>
-                </label>
-                <label>
-                    &star; &star; &star; &star;<input type="radio" name="rating" value="4star" required>
+                <label>&star; &star; &star;<input type="radio" name="rating" id="3star" value="3star" required>
                 </label>
                 <label>
-                    &star; &star; &star; &star; &star;<input type="radio" name="rating" value="5star" required>
+                    &star; &star; &star; &star;<input type="radio" name="rating" id="4star" value="4star" required>
+                </label>
+                <label>
+                    &star; &star; &star; &star; &star;<input type="radio" id="5star" name="rating" value="5star"
+                        required>
                 </label>
             </fieldset>
 
-            <label for="dateInstallation">Date of Installation
+            <label for="installDate">Date of Installation
                 <input type="date" name="dateInstallation" id="installDate" required>
             </label>
 
 
             <p>Which features did you find useful in the product?</p>
             <p>(Check all that apply)</p>
-            <label for="features">
+            <label for="durability">
                 <input type="checkbox" name="features" id="durability" value="durability"> Durability
             </label>
-            <label for="features">
+            <label for="easeOfUse">
                 <input type="checkbox" name="features" id="easeOfUse" value="easeOfUse"> Ease of Use
             </label>
-            <label for="features">
+            <label for="performance">
                 <input type="checkbox" name="features" id="performance" value="performance"> Performance
-            </label for="features">
-            <label for="features">
+            </label>
+            <label for="design">
                 <input type="checkbox" name="features" id="design" value="design"> Design
             </label>
-            <label for="features">
+            <label for="affordable">
                 <input type="checkbox" name="features" id="affordable" value="affordable"> Affordable
             </label>
 
-            <label for="review">
+            <label for="writtenReview">
                 Written Review <span class="optional">(Optional)</span>
                 <textarea id="writtenReview" name="review"></textarea>
             </label>
