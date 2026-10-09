@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeYou-Debt</title>
+
+    <meta name="description"
+        content="This is the concept software application project named SeeYou-Debt. This is a project built for WDD 131 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Leo Alfred A. Mosquera">
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="./scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/logo-concept_1.webp" alt="seeyou-debt logo" id="projectLogo"></a>
+        <nav>
+            <a class="navItem close" href="./index.html">Home</a>
+            <a class="navItem close" href="./aboutus.html">About Us</a>
+            <a class="navItem close" href="./contact.html">Contact</a>
+            <a id="hammenu">☰</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-section">
+            <img src="./images/hero-image-optimized.webp" alt="image of a woman waving debt goodbye" loading="lazy">
+            <div id="formContainer">
+                <h1>Your debt doesn't have to control your future.</h1>
+                <h2>SeeYou-Debt helps you understand what you owe, decide what to pay first, build a personalized payoff
+                    plan, and see when
+                    you could finally become debt-free.</h2>
+                <form method="get" id="inquireForm">
+                    <label for="uname">User Name
+                        <input type="text" id="uname" name="uname" placeholder="e.g: John" required>
+                    </label>
+                    <label for="email">Email
+                        <input type="email" id="email" name="email" placeholder="personal@myemail.com" required>
+                    </label>
+                    <input type="submit" id="submitBtn" value="Start My Debt-Free Journey">
+                </form>
+            </div>
+        </section>
+        <section id="dashboard-preview-container">
+            <h1>Your Debt-Free Journey</h1>
+            <img src="./images/dashboard.webp" alt="sample image of dashboard" loading="lazy">
+        </section>
+        <section id="how-it-works-container">
+            <h2>Getting out of debt doesn't have to feel complicated.</h2>
+            <div id="card-container">
+                <div class="card">
+                    <h3>01 — See It</h3>
+                    <p>Add all your debts in one place.</p>
+                </div>
+                <div class="card">
+                    <h3>02 — Plan It</h3>
+                    <p>Choose a strategy that works for you.</p>
+                </div>
+                <div class="card">
+                    <h3>03 — Pay It</h3>
+                    <p>Follow your personalized payment plan.</p>
+                </div>
+                <div class="card">
+                    <h3>04 — Track It</h3>
+                    <p>Watch your balance shrink.</p>
+                </div>
+                <div class="card">
+                    <h3>05 — Say Goodbye</h3>
+                    <p>Reach $0 and say:
+
+                        See you, debt. 👋</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="difference-container">
+            <h2>What Makes SeeYou-Debt Different?</h2>
+            <h3>Don't just see your debt.</h3>
+            <h2>See your way out.</h2>
+            <p>Most people don't need another place to look at their balances.</p>
+            <h2><strong><u>They need answers.</u></strong></h2>
+            <div id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <ol id="faqList">
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Leo Alfred A. Mosquera, Philippines</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

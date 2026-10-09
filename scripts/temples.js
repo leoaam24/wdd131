@@ -26,7 +26,5 @@ hamburgerMenu.addEventListener("click", function () {
     } else {
         hamburgerMenu.textContent = "☰";
     }
-
-
 })
 
