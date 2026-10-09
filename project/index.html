@@ -33,7 +33,11 @@
     </header>
     <main>
         <section id="hero-section">
-            <img src="./images/hero-image-optimized.webp" alt="image of a woman waving debt goodbye" loading="lazy">
+            <picture>
+                <source srcset="./images/hero-image-optimized.webp" media="(min-width: 1024px)">
+                <img src="./images/hero-image-optimized-2.webp" alt="image of a woman waving debt goodbye"
+                    loading="lazy" width="640" height="280">
+            </picture>
             <div id="formContainer">
                 <h1>Your debt doesn't have to control your future.</h1>
                 <h2>SeeYou-Debt helps you understand what you owe, decide what to pay first, build a personalized payoff

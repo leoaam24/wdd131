@@ -76,7 +76,7 @@ if (faqlist) {
 if (window.location.pathname === '/index.html') {
     navigationItems.forEach(function (item) {
         if (item.textContent === "Home") {
-            item.classList.add("active");
+            item.setAttribute("aria-current","page");
         }
     })
 }
@@ -84,7 +84,7 @@ if (window.location.pathname === '/index.html') {
 if (window.location.pathname === '/aboutus.html') {
     navigationItems.forEach(function (item) {
         if (item.textContent === "About Us") {
-            item.classList.add("active");
+            item.setAttribute("aria-current", "page");
         }
     })
 }
@@ -92,7 +92,7 @@ if (window.location.pathname === '/aboutus.html') {
 if (window.location.pathname === '/contact.html') {
     navigationItems.forEach(function (item) {
         if (item.textContent === "Contact") {
-            item.classList.add("active");
+            item.setAttribute("aria-current","page");
         }
     })
 }
